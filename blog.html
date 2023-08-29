@@ -297,7 +297,7 @@
         </style>
         <style id='wp-block-search-inline-css'>
             .wp-block-search__button {
-                margin-left: .625em;
+                margin-left:20px;
                 word-break: normal
             }
 
@@ -314,14 +314,17 @@
 
             :where(.wp-block-search__button) {
                 border: 1px solid #ccc;
-                padding: .375em .625em
+                padding: .375em .625em;
+                padding: 111px 50px;
             }
 
             .wp-block-search__inside-wrapper {
                 display: flex;
                 flex: auto;
                 flex-wrap: nowrap;
-                max-width: 100%
+                max-width: 100%;
+                margin-top: 10px;
+                margin-bottom: 50px;
             }
 
             .wp-block-search__label {
@@ -332,8 +335,13 @@
                 padding: 10px;
                 border: 1px solid #ccc;
                 font-size: 16px;
-                width: 100%;
-                /* box-sizing: border-box; */
+                width: 50%;
+                border-radius: 10px;
+                box-sizing: border-box;
+            
+
+
+                
             }
 
             .wp-block-search.wp-block-search__button-only .wp-block-search__button {
@@ -830,7 +838,7 @@
                 --wp--preset--color--foreground: #048292;
                 --wp--preset--color--background: #ffffff;
                 --wp--preset--color--primary: #1a4548;
-                --wp--preset--color--secondary: #ffe2c7;
+                --wp--preset--color--secondary: #e4760f;
                 --wp--preset--color--tertiary: #F6F6F6;
                 --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
                 --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
@@ -895,9 +903,9 @@
             body {
                 margin: 0;
                 --wp--style--global--content-size: 650px;
-                --wp--style--global--wide-size: 1000px;
+                --wp--style--global--wide-size: 800px;
             }
-
+/* 
             .wp-site-blocks > .alignleft {
                 float: left;
                 margin-right: 2em;
@@ -918,7 +926,7 @@
                 margin-block-start: 0; margin-block-end: 0; }
 
             .wp-site-blocks > * + * {
-                margin-block-start: 1.5rem; }
+                margin-block-start: 1.5rem; } */
 
             body {
                 --wp--style--block-gap: 1.5rem;
@@ -1004,7 +1012,7 @@
             a:where(:not(.wp-element-button)) {
                 color: var(--wp--preset--color--foreground);
                 font-family: "Source Serif Pro", serif;
-                text-decoration: underline;
+                text-decoration: none;
             }
 
             h1 {
@@ -1195,7 +1203,7 @@
             }
 
             .has-tertiary-background-color {
-                background-color: var(--wp--preset--color--tertiary) !important;
+                background-color: none;
             }
 
             .has-black-border-color {
