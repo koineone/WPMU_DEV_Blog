@@ -76,40 +76,12 @@
         </script>
         <style>
 
-                        /* Style for the wp-block-navigation-item__content class */
-            .wp-block-navigation-item__content {
-            padding: 15px;
-            background-color: #0074d9; /* Change this to your desired color */
-            border: 1px solid #ccc;
-            color: #fff; /* Text color for better contrast */
-            font-size: 16px;
-            line-height: 1.5;
-            text-align: center;
-            }
-
-            /* Hover effect */
-            .wp-block-navigation-item__content:hover {
-            background-color: #0056b3; /* Darker shade for hover effect */
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            }
-
-            /* Responsive adjustments */
-            @media (max-width: 768px) {
-            .wp-block-navigation-item__content {
-                font-size: 14px;
-                padding: 10px;
-            }
-}
-
-
-
             .alignwide .wp-block-post-title {
                 font-size: medium; 
                 color: #333; 
                 margin: 0; 
                 padding: 10px; 
-                border-radius: 5px; 
+                border-radius: 0px; 
                 text-align: center;
                 text-decoration: none ;
                 
@@ -138,8 +110,14 @@
         </style>
         <style id='wp-block-navigation-link-inline-css'>
             .wp-block-navigation .wp-block-navigation-item__label {
-                word-break: normal;
+               
                 overflow-wrap: break-word;
+                overflow-wrap:normal;
+                font-size: 16px;
+                color: #ffffff;
+                
+                
+                padding: 8px;
                 
                 
 
@@ -166,7 +144,8 @@
         </style>
         <style id='wp-block-template-part-inline-css'>
             .wp-block-template-part.has-background {
-                padding: 1.25em 2.375em;
+                padding: 10px 20px;
+                
                 margin-top: 0;
                 margin-bottom: 0
             }
@@ -221,7 +200,7 @@
             }
 
             .wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img {
-                border-radius: 9999px
+                border-radius: 0px
             }
             @supports ((-webkit-mask-image: none) or (mask-image:none)) or (-webkit-mask-image:none) {
                 .wp-block-image.is-style-circle-mask img {
@@ -323,8 +302,8 @@
                 flex: auto;
                 flex-wrap: nowrap;
                 max-width: 100%;
-                margin-top: 10px;
-                margin-bottom: 50px;
+                /* margin-top: 10px; */
+                /* margin-bottom: px; */
             }
 
             .wp-block-search__label {
@@ -336,7 +315,7 @@
                 border: 1px solid #ccc;
                 font-size: 16px;
                 width: 50%;
-                border-radius: 10px;
+                border-radius: 0px;
                 box-sizing: border-box;
             
 
@@ -827,7 +806,7 @@
                 --wp--preset--color--cyan-bluish-gray: #abb8c3;
                 --wp--preset--color--white: #ffffff;
                 --wp--preset--color--pale-pink: #f78da7;
-                --wp--preset--color--vivid-red: #048292;
+                --wp--preset--color--vivid-red: #04dac8fb;
                 --wp--preset--color--luminous-vivid-orange: #ff6900;
                 --wp--preset--color--luminous-vivid-amber: #fcb900;
                 --wp--preset--color--light-green-cyan: #7bdcb5;
@@ -835,7 +814,7 @@
                 --wp--preset--color--pale-cyan-blue: #8ed1fc;
                 --wp--preset--color--vivid-cyan-blue: #0693e3;
                 --wp--preset--color--vivid-purple: #9b51e0;
-                --wp--preset--color--foreground: #048292;
+                --wp--preset--color--foreground: #2fa1a1;
                 --wp--preset--color--background: #ffffff;
                 --wp--preset--color--primary: #1a4548;
                 --wp--preset--color--secondary: #e4760f;
@@ -901,10 +880,10 @@
             }
 
             body {
-                margin: 0;
-                --wp--style--global--content-size: 650px;
+                 margin: 0;
+                --wp--style--global--content-size: 1050px;
                 --wp--style--global--wide-size: 800px;
-            }
+            } 
 /* 
             .wp-site-blocks > .alignleft {
                 float: left;
@@ -1632,18 +1611,10 @@
             <header class="wp-block-template-part">
                 <div class="is-layout-constrained wp-elements-6168ec0dc787a297453884a052a8bf6d wp-block-group alignfull has-background-color has-foreground-background-color has-text-color has-background has-link-color" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
                     <header class="alignwide wp-block-template-part">
-                        <div class="is-layout-constrained wp-block-group" style="padding-top:40px">
-                            <h1 class="wp-block-site-title">
-                                <a href="https://tasksheet.tempurl.host" target="_self" rel="home" aria-current="page">My Blog</a>
-                            </h1>
+                        <div class="menu-container ">
+                        <div class="is-layout-constrained wp-block-group" style="padding-top:0px">
                             <nav class="is-content-justification-right is-layout-flex wp-container-2 is-responsive items-justified-right wp-block-navigation" aria-label="Header navigation">
-                                <button aria-haspopup="true" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-micromodal-trigger="modal-1">
-                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                        <rect x="4" y="7.5" width="16" height="1.5"/>
-                                        <rect x="4" y="15" width="16" height="1.5"/>
-                                    </svg>
-                                </button>
-                                <div class="wp-block-navigation__responsive-container  " style="" id="modal-1">
+                                <div class="wp-block-navigation__responsive-container  "  id="modal-1">
                                     <div class="wp-block-navigation__responsive-close" tabindex="-1" data-micromodal-close>
                                         <div class="wp-block-navigation__responsive-dialog" aria-label="Menu">
                                             <button aria-label="Close menu" data-micromodal-close class="wp-block-navigation__responsive-container-close">
@@ -1651,6 +1622,15 @@
                                                     <path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path>
                                                 </svg>
                                             </button>
+                                            <style>
+                                                .menu-container {
+                                                    display: flex;
+                                                    justify-content: center; 
+                                                    align-items: center;     
+                                                    height: 100px;       
+                                                }
+                                            </style>
+                                        <div class="menu-container">
                                             <div class="wp-block-navigation__responsive-container-content" id="modal-1-content">
                                                 <ul class="wp-block-navigation__container">
                                                     <li class=" wp-block-navigation-item wp-block-navigation-link">
@@ -1675,17 +1655,24 @@
                                 </div>
                             </nav>
                         </div>
+                    </div>
                     </header>
+                    <a href="https://wordpress.org">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wordpress-Logo.svg/512px-Wordpress-Logo.svg.png?20210511042647" alt="WordPress Logo" width="200px" height="400px">
+                    </a>
                     <figure class="wp-block-image alignwide size-full">
+                    
+                        
                         <img decoding="async" src="https://tasksheet.tempurl.host/wp-content/themes/twentytwentytwo/assets/images/flight-path-on-transparent-d.png" alt="Illustration of a bird flying."/>
                     </figure>
-                    <form role="search" method="get" action="https://tasksheet.tempurl.host/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
-                        <label for="wp-block-search__input-4" class="wp-block-search__label">Search</label>
-                        <div class="wp-block-search__inside-wrapper " style="width: 100%">
-                            <input type="search" id="wp-block-search__input-4" class="wp-block-search__input wp-block-search__input" name="s" value="" placeholder="" style="border-radius: 50px" required/>
-                            <button type="submit" class="wp-block-search__button has-text-color has-foreground-color has-background has-secondary-background-color wp-element-button" style="border-radius: 50px">Search</button>
-                        </div>
-                    </form>
+                    <div class="menu-container">
+                   <!-- <form role="search" method="get" action="https://tasksheet.tempurl.host/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"></br> -->
+                        <!-- <label for="wp-block-search__input-4" class="wp-block-search__label">Search</label> -->
+                        <!-- <div class="wp-block-search__inside-wrapper " style="width: 100%"> -->
+                            <input type="search" id="wp-block-search__input-4" class="wp-block-search__input wp-block-search__input" name="s" value="" placeholder=""  required/>
+                            <button type="submit" class="wp-block-search__button has-text-color has-foreground-color has-background has-secondary-background-color wp-element-button">Search</button>
+                    <!-- </div> -->
+                    
                 </div>
             </header>
             <main class="is-layout-flow wp-elements-104e35a5e6ab9d94d7d4dcb8c5cc094c wp-block-query has-foreground-color has-tertiary-background-color has-text-color has-background has-link-color">
