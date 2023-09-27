@@ -115,11 +115,8 @@
                 overflow-wrap:normal;
                 font-size: 16px;
                 color: #ffffff;
-                
-                
                 padding: 8px;
-                
-                
+                   
 
             }
 
@@ -143,139 +140,15 @@
             } */
         </style>
         <style id='wp-block-template-part-inline-css'>
-            /* .wp-block-template-part.has-background {
-                padding: 10px 20px;
-                
-                margin-top: 0;
-                margin-bottom: 0
-            } */
+      
         </style>
         <style id='wp-block-image-inline-css'>
-            /* .wp-block-image img {
-                height: 5px;
-                max-width: 100%;
-                vertical-align:text-top
-            } */
-
-            /* .wp-block-image.has-custom-border img,.wp-block-image img {
-                box-sizing: border-box
-            } */
-
-            /* .wp-block-image.aligncenter {
-                text-align: center
-            } */
+    
 
             .wp-block-image.alignfull img,.wp-block-image.alignwide img {
                 height: 40%;
                 width: 100%
             }
-
-            /* .wp-block-image.aligncenter,.wp-block-image .aligncenter,.wp-block-image.alignleft,.wp-block-image .alignleft,.wp-block-image.alignright,.wp-block-image .alignright {
-                display: table
-            } */
-
-            /* .wp-block-image.aligncenter>figcaption,.wp-block-image .aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image.alignright>figcaption,.wp-block-image .alignright>figcaption {
-                display: table-caption;
-                caption-side: bottom
-            } */
-/* 
-            .wp-block-image .alignleft {
-                float: left;
-                margin: .5em 1em .5em 0
-            }
-
-            .wp-block-image .alignright {
-                float: right;
-                margin: .5em 0 .5em 1em
-            }
-
-            .wp-block-image .aligncenter {
-                margin-left: auto;
-                margin-right: auto
-            }
-
-            .wp-block-image figcaption {
-                margin-top: .5em;
-                margin-bottom: 1em
-            }
-
-            .wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img {
-                border-radius: 0px
-            } */
-
-            /* @supports ((-webkit-mask-image: none) or (mask-image:none)) or (-webkit-mask-image:none) {
-                .wp-block-image.is-style-circle-mask img {
-                    -webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');
-                    mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');
-                    mask-mode: alpha;
-                    -webkit-mask-repeat: no-repeat;
-                    mask-repeat: no-repeat;
-                    -webkit-mask-size: contain;
-                    mask-size: contain;
-                    -webkit-mask-position: center;
-                    mask-position: center;
-                    border-radius: 0
-                } */
-
-
-            /* }
-            .wp-block-image :where(.has-border-color) {
-                border-style: solid
-            }
-
-            .wp-block-image :where([style*=border-top-color]) {
-                border-top-style: solid
-            }
-
-            .wp-block-image :where([style*=border-right-color]) {
-                border-right-style: solid
-            }
-
-            .wp-block-image :where([style*=border-bottom-color]) {
-                border-bottom-style: solid
-            }
-
-            .wp-block-image :where([style*=border-left-color]) {
-                border-left-style: solid
-            }
-
-            .wp-block-image :where([style*=border-width]) {
-                border-style: solid
-            }
-
-            .wp-block-image :where([style*=border-top-width]) {
-                border-top-style: solid
-            }
-
-            .wp-block-image :where([style*=border-right-width]) {
-                border-right-style: solid
-            }
-
-            .wp-block-image :where([style*=border-bottom-width]) {
-                border-bottom-style: solid
-            }
-
-            .wp-block-image :where([style*=border-left-width]) {
-                border-left-style: solid
-            } */
-
-            /* .wp-block-image figure {
-                margin: 0
-            }
-
-            .wp-block-image figcaption {
-                color: #555;
-                font-size: 13px;
-                text-align: center
-            }
-
-            .is-dark-theme .wp-block-image figcaption {
-                color: hsla(0,0%,100%,.65)
-            }
-
-            .wp-block-image {
-                margin: 0 0 1em
-            } */
         </style>
         <style id='wp-block-search-inline-css'>
             .wp-block-search__button {
@@ -1630,39 +1503,51 @@
                                             </button>
                                             <div class="menu-container">
                                                 <a href="https://wordpress.org">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wordpress-Logo.svg/512px-Wordpress-Logo.svg.png?20210511042647" alt="WordPress Logo" width="50" height="50">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wordpress-Logo.svg/512px-Wordpress-Logo.svg.png?20210511042647" alt="WordPress Logo" width="80" height="80">
                                                 </a>
                                                 </div>
                                             <style>
                                                 .menu-container {
                                                     display: flex;
-                                                    justify-content: center; 
+                                                    justify-content: center;
                                                     align-items: center;     
-                                                    height: 100px;  
-                                                    margin: 0;    
+                                                    height: 100px; 
+                                                    margin: 0;
+                                                    
                                                 }
+
+                                            .menu {
+                                                background-color: #ffffff;
+                                                overflow: hidden;
+                                                padding: 0px 180px;
+                                                margin: 0 auto; 
+                                                }
+
+                                                
+                                                .menu a {
+                                                    float: left;
+                                                    display: block;
+                                                    color: rgb(3, 3, 3);
+                                                    text-align: center;
+                                                    padding: 8px 16px;
+                                                    text-decoration: none;
+                                                }
+
+                                                
+                                                .menu a:hover {
+                                                    background-color: #ffffff;
+                                                    color: black;
+                                                }
+
+
+                                                
                                             </style>
-                                        <div class="menu-container">
-                                            <div class="wp-block-navigation__responsive-container-content" id="modal-1-content">
-                                                <ul class="wp-block-navigation__container">
-                                                    <li class=" wp-block-navigation-item wp-block-navigation-link">
-                                                        <a class="wp-block-navigation-item__content" href="https://tasksheet.tempurl.host/">
-                                                            <span class="wp-block-navigation-item__label">Homepage</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class=" wp-block-navigation-item wp-block-navigation-link">
-                                                        <a class="wp-block-navigation-item__content" href="#">
-                                                            <span class="wp-block-navigation-item__label">Blog</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class=" wp-block-navigation-item wp-block-navigation-link">
-                                                        <a class="wp-block-navigation-item__content" href="https://tasksheet.tempurl.host/sample-page/">
-                                                            <span class="wp-block-navigation-item__label">Sample Page</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                        <div class="menu-container" >
+                                            <div class="menu">
+                                                <a href="https://tasksheet.tempurl.host/">Homepage</a>
+                                                <a href="#">Blog</a>
+                                                <a href="https://tasksheet.tempurl.host/sample-page/">Sample Page</a>
                                             </div>
-                                        </div>
                                     </div>
                                 </div>
                             </nav>
@@ -1672,7 +1557,7 @@
             
                     <div class="menu-container">
                         
-                        <img decoding="async" src="https://tasksheet.tempurl.host/wp-content/themes/twentytwentytwo/assets/images/flight-path-on-transparent-d.png" alt="Illustration of a bird flying." width="1000" height="200" style="padding-top:150px"/>
+                        <img decoding="async" src="https://tasksheet.tempurl.host/wp-content/themes/twentytwentytwo/assets/images/flight-path-on-transparent-d.png" alt="Illustration of a bird flying." width="1000" height="180" style="padding-top:180px"/>
                     
                     </div>
                     <div class="menu-container">
